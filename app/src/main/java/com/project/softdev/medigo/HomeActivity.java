@@ -45,7 +45,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.btnprofile:
-                startActivity(new Intent());
+                startActivity(new Intent(this, ProfileActivity.class));
                 break;
 
             case R.id.btnlogout:
