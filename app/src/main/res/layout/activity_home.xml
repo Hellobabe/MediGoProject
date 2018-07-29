@@ -85,8 +85,8 @@
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="369dp"
-        android:layout_height="9dp"
+        android:layout_width="0dp"
+        android:layout_height="10dp"
         android:layout_marginTop="15dp"
         app:layout_constraintBottom_toTopOf="@+id/textView5"
         app:layout_constraintEnd_toEndOf="parent"
@@ -96,8 +96,8 @@
 
     <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="369dp"
-        android:layout_height="9dp"
+        android:layout_width="0dp"
+        android:layout_height="10dp"
         android:layout_marginBottom="15dp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
         app:layout_constraintEnd_toEndOf="parent"
