@@ -35,7 +35,8 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btncam:
-                startActivity(new Intent());
+                finish();
+                startActivity(new Intent(this, OCRActivity.class));
                 break;
 
             case R.id.btnpic:
