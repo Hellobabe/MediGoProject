@@ -5,23 +5,25 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import com.google.firebase.auth.FirebaseAuth;
 
 public class HomeActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private FirebaseAuth firebaseAuth;
+    private FirebaseAuth mAuth;
 
-    Button btnlogout, btncam, btnpic, btnnonprescript, btnprofile;
+    Button btncam, btnpic, btnnonprescript, btnprofile;
+    ImageView ic_logout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        firebaseAuth = FirebaseAuth.getInstance();
+        mAuth = FirebaseAuth.getInstance();
 
-        findViewById(R.id.btnlogout).setOnClickListener(this);
+        findViewById(R.id.ic_logout).setOnClickListener(this);
         findViewById(R.id.btncam).setOnClickListener(this);
         findViewById(R.id.btnpic).setOnClickListener(this);
         findViewById(R.id.btnnonprescript).setOnClickListener(this);
@@ -48,8 +50,8 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(this, ProfileActivity.class));
                 break;
 
-            case R.id.btnlogout:
-                firebaseAuth.signOut();
+            case R.id.ic_logout:
+                mAuth.signOut();
                 finish();
                 startActivity(new Intent(this, LoginActivity.class));
                 break;
