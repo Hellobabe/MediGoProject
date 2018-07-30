@@ -89,8 +89,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                     break;
 
                 case R.id.btnLSU:
-                    startActivity(new Intent(this, MainActivity.class));
-                    finish();
+                    startActivity(new Intent(this, RegisterActivity.class));
                     break;
 
             }
