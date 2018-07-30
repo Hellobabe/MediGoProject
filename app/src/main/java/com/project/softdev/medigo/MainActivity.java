@@ -47,7 +47,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         String username = Uname.getText().toString().trim();
         String address = aaddress.getText().toString().trim();
 
-
+            if (username.isEmpty()) {
+                Uname.setError("Enter a username");
+                Uname.requestFocus();
+                return;
+            }
             if (email.isEmpty()) {
                 eemail.setError("Enter an email");
                 eemail.requestFocus();
@@ -56,11 +60,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
                 eemail.setError("Enter a valid Email!");
                 eemail.requestFocus();
-                return;
-            }
-            if (username.isEmpty()) {
-                Uname.setError("Enter a username");
-                Uname.requestFocus();
                 return;
             }
             if (password.isEmpty()) {
