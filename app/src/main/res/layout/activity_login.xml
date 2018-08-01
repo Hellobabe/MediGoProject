@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="@drawable/gradwallpaper"
     tools:context=".LoginActivity">
 
     <ImageView
@@ -13,7 +13,7 @@
         android:layout_height="150dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="15dp"
+        android:layout_marginBottom="30dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="50dp"
@@ -30,10 +30,10 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:layout_marginBottom="15dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="30dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -43,116 +43,82 @@
             android:id="@+id/eemail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="45dp"
+            android:layout_marginHorizontal="30dp"
             android:layout_marginVertical="2dp"
+            android:background="@drawable/emailadd_field"
             android:hint="Email"
-            android:inputType="textEmailAddress" />
+            android:textColor="#26A5E5"
+            android:textColorHint="#26A5E5"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="45dp"
+            android:paddingRight="10dp"
+            android:alpha=".75"/>
 
         <EditText
             android:id="@+id/psswrd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="45dp"
+            android:layout_marginHorizontal="30dp"
             android:layout_marginVertical="2dp"
+            android:background="@drawable/password_field"
             android:hint="Password"
-            android:inputType="textPassword" />
+            android:textColor="#26A5E5"
+            android:textColorHint="#26A5E5"
+            android:inputType="textPassword"
+            android:paddingLeft="45dp"
+            android:paddingRight="10dp"
+            android:alpha=".75"/>
 
 
         <Button
             android:id="@+id/btnLSI"
             android:layout_width="match_parent"
             android:layout_height="45dp"
-            android:layout_marginHorizontal="45dp"
-            android:layout_marginTop="7dp"
-            android:background="#4286f4"
-            android:text="Login"
-            android:textColor="#ffffff" />
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/login_btn"
+            />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            android:layout_marginVertical="10dp"
+            android:text="OR"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/btnLSU"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginVertical="2dp"
+            android:background="@drawable/signup_btn" />
 
     </LinearLayout>
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="28dp"
-        android:layout_height="21dp"
-        android:layout_marginBottom="15dp"
-        android:layout_marginTop="15dp"
-        android:text="OR"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnLSU"
-        app:layout_constraintEnd_toStartOf="@+id/imageView3"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/btnLSU"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:layout_marginEnd="45dp"
-        android:layout_marginHorizontal="45dp"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="15dp"
-        android:background="#4286f4"
-        android:text="Sign Up"
-        android:textColor="#ffffff"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:ignore="MissingConstraints" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="156dp"
-        android:layout_height="36dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnLSU"
-        app:layout_constraintEnd_toStartOf="@+id/textView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-        app:layout_constraintVertical_bias="0.551"
-        app:srcCompat="@drawable/line"
-        tools:ignore="MissingConstraints" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="156dp"
-        android:layout_height="36dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnLSU"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-        app:layout_constraintVertical_bias="0.551"
-        app:srcCompat="@drawable/line"
-        tools:ignore="MissingConstraints" />
 
     <LinearLayout
         android:id="@+id/linearLayout4"
         android:layout_width="match_parent"
-        android:layout_height="54dp"
-        android:layout_marginBottom="15dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="5dp"
         android:layout_marginTop="8dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnSU">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.954">
 
         <ProgressBar
             android:id="@+id/progbar"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:visibility="gone" />
+            android:visibility="gone"
+            android:progressTint="#000000"/>
     </LinearLayout>
 
 

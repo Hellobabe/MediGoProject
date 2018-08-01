@@ -6,43 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".OCRActivity">
 
-    <LinearLayout
+    <SurfaceView
+        android:id="@+id/surface_view"
         android:layout_width="match_parent"
-        android:layout_height="310dp"
-        android:layout_marginBottom="129dp"
-        android:layout_marginTop="128dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
-
-
-        <ImageView
-            android:id="@+id/show_image"
-            android:layout_width="match_parent"
-            android:layout_height="174dp"
-
-            android:layout_marginTop="15dp"
-            android:src="@drawable/ic_show_image" />
-
-        <Button
-            android:id="@+id/btn_process"
-            android:layout_width="match_parent"
-            android:layout_height="46dp"
-
-            android:text="PROCESS" />
-
-        <TextView
-            android:id="@+id/show_text"
-            android:layout_width="match_parent"
-            android:layout_height="18dp"
-            android:layout_marginBottom="250dp"
-            android:text="sample text here"
-            android:textAlignment="center" />
-
-    </LinearLayout>
+        android:layout_height="match_parent" />
+    
+    <TextView
+        android:id="@+id/text_view200"
+        android:text="NO TEXT"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 </android.support.constraint.ConstraintLayout>
