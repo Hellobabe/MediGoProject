@@ -4,128 +4,161 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="@drawable/gradwallpaper"
     tools:context=".HomeActivity">
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="100dp"
-        android:layout_height="40dp"
-        android:text="HOME"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="30dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView6"
-        app:layout_constraintEnd_toEndOf="parent"
+    <LinearLayout
+        android:id="@+id/nonprescription"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:background="#4F81BC"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@+id/btnprofile"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/btncam">
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/medicine_icon" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PRESCRIPTION"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout5"
-        android:layout_width="0dp"
-        android:layout_height="368dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="100dp"
-        android:layout_marginTop="10dp"
+        android:id="@+id/btnpic"
+        android:layout_width="150dp"
+        android:layout_height="151dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:background="#4F81BC"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btncam"
+        app:layout_constraintTop_toBottomOf="@+id/home_main_page">
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:background="@drawable/image_prescript" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PRESCRIPTION"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btncam"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:background="#4F81BC"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@+id/btnpic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_main_page">
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/ic_camera" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CAMERA"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnprofile"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:background="#4F81BC"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nonprescription"
+        app:layout_constraintTop_toBottomOf="@+id/btnpic">
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/ic_profile" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PROFILE"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnfeedback"
+        android:layout_width="335dp"
+        android:layout_height="140dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:background="#4F81BC"
+        android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6">
+        app:layout_constraintTop_toBottomOf="@+id/nonprescription">
 
-        <Button
-            android:id="@+id/btncam"
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/ic_feedback" />
+
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginHorizontal="35dp"
-            android:layout_marginVertical="15dp"
-            android:background="@drawable/pgradient"
-            android:text="Open Camera"
+            android:layout_height="wrap_content"
+            android:text="RATE AND COMMENT"
+            android:textAlignment="center"
             android:textColor="#FFFFFF" />
-
-        <Button
-            android:id="@+id/btnpic"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_marginHorizontal="35dp"
-            android:layout_marginVertical="15dp"
-            android:background="@drawable/pgradient"
-            android:text="Upload Prescription"
-            android:textColor="#FFFFFF" />
-
-        <Button
-            android:id="@+id/btnnonprescript"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_marginHorizontal="35dp"
-            android:layout_marginVertical="15dp"
-            android:background="@drawable/pgradient"
-            android:text="Buy non prescription"
-            android:textColor="#FFFFFF" />
-
-        <Button
-            android:id="@+id/btnprofile"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginHorizontal="35dp"
-            android:layout_marginVertical="15dp"
-            android:background="@drawable/pgradient"
-            android:text="Profile"
-            android:textColor="#FFFFFF" />
-
     </LinearLayout>
 
-    <ImageView
-        android:id="@+id/imageView5"
+    <TextView
+        android:id="@+id/home_main_page"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        android:layout_height="54dp"
+        android:layout_marginEnd="-5dp"
+        android:layout_marginStart="-5dp"
+        android:layout_marginTop="-5dp"
+        android:background="#C00002"
+        android:text="HOME"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="spread"
-        app:srcCompat="@drawable/line" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
-        app:srcCompat="@drawable/line" />
-
-    <ImageView
-        android:id="@+id/gohome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="40dp"
-        android:layout_marginStart="15dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView5"
-        app:layout_constraintEnd_toStartOf="@+id/ic_logout"
-        app:layout_constraintHorizontal_chainStyle="spread_inside"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView5"
-        app:srcCompat="@drawable/ic_home_blue" />
-
-    <ImageView
-        android:id="@+id/ic_logout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="15dp"
-        android:layout_marginStart="40dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/gohome"
-        app:layout_constraintTop_toTopOf="@+id/textView5"
-        app:srcCompat="@drawable/ic_exit" />
-
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

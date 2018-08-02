@@ -42,13 +42,13 @@
         <EditText
             android:id="@+id/eemail"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="45dp"
             android:layout_marginHorizontal="30dp"
             android:layout_marginVertical="2dp"
-            android:background="@drawable/emailadd_field"
+            android:background="@drawable/email_field"
             android:hint="Email"
-            android:textColor="#26A5E5"
-            android:textColorHint="#26A5E5"
+            android:textColor="#001942"
+            android:textColorHint="#001942"
             android:inputType="textEmailAddress"
             android:paddingLeft="45dp"
             android:paddingRight="10dp"
@@ -57,13 +57,13 @@
         <EditText
             android:id="@+id/psswrd"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="45dp"
             android:layout_marginHorizontal="30dp"
             android:layout_marginVertical="2dp"
-            android:background="@drawable/password_field"
+            android:background="@drawable/password_security_field"
             android:hint="Password"
-            android:textColor="#26A5E5"
-            android:textColorHint="#26A5E5"
+            android:textColor="#001942"
+            android:textColorHint="#001942"
             android:inputType="textPassword"
             android:paddingLeft="45dp"
             android:paddingRight="10dp"
@@ -76,7 +76,9 @@
             android:layout_height="45dp"
             android:layout_marginHorizontal="25dp"
             android:layout_marginVertical="10dp"
-            android:background="@drawable/login_btn"
+            android:textColor="#FFFFFF"
+            android:text="LOGIN"
+            android:background="@drawable/blue_button"
             />
 
         <TextView
@@ -95,7 +97,9 @@
             android:layout_height="45dp"
             android:layout_marginHorizontal="25dp"
             android:layout_marginVertical="2dp"
-            android:background="@drawable/signup_btn" />
+            android:text="SIGN UP"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/red_button" />
 
     </LinearLayout>
 

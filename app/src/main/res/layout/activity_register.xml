@@ -44,14 +44,14 @@
         <EditText
             android:id="@+id/Uname"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="45dp"
             android:layout_marginHorizontal="30dp"
             android:layout_marginVertical="2dp"
             android:alpha=".75"
-            android:background="@drawable/username_field"
+            android:background="@drawable/user_name_field"
             android:hint="Username"
-            android:textColor="#26A5E5"
-            android:textColorHint="#26A5E5"
+            android:textColor="#001942"
+            android:textColorHint="#001942"
             android:inputType="textPersonName"
             android:paddingLeft="45dp"
             android:paddingRight="10dp" />
@@ -59,14 +59,14 @@
         <EditText
             android:id="@+id/eemail"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="45dp"
             android:layout_marginHorizontal="30dp"
             android:layout_marginVertical="2dp"
             android:alpha=".75"
-            android:background="@drawable/emailadd_field"
+            android:background="@drawable/email_field"
             android:hint="Email"
-            android:textColor="#26A5E5"
-            android:textColorHint="#26A5E5"
+            android:textColor="#001942"
+            android:textColorHint="#001942"
             android:inputType="textEmailAddress"
             android:paddingLeft="45dp"
             android:paddingRight="10dp" />
@@ -74,14 +74,14 @@
         <EditText
             android:id="@+id/psswrd"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="45dp"
             android:layout_marginHorizontal="30dp"
             android:layout_marginVertical="2dp"
             android:alpha=".75"
-            android:background="@drawable/password_field"
+            android:background="@drawable/password_security_field"
             android:hint="Password"
-            android:textColor="#26A5E5"
-            android:textColorHint="#26A5E5"
+            android:textColor="#001942"
+            android:textColorHint="#001942"
             android:inputType="textPassword"
             android:paddingLeft="45dp"
             android:paddingRight="10dp" />
@@ -89,14 +89,14 @@
         <EditText
             android:id="@+id/aaddress"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="45dp"
             android:layout_marginHorizontal="30dp"
             android:layout_marginVertical="2dp"
             android:alpha=".75"
-            android:background="@drawable/address_field"
+            android:background="@drawable/home_address_field"
             android:hint="Address"
-            android:textColor="#26A5E5"
-            android:textColorHint="#26A5E5"
+            android:textColor="#001942"
+            android:textColorHint="#001942"
             android:inputType="textPostalAddress"
             android:paddingLeft="45dp"
             android:paddingRight="10dp" />
@@ -108,7 +108,9 @@
             android:layout_marginHorizontal="25dp"
             android:layout_marginTop="7dp"
             android:layout_marginVertical="10dp"
-            android:background="@drawable/createacct_btn" />
+            android:text="CREATE ACCOUNT"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/blue_button" />
 
         <TextView
             android:id="@+id/textView2"
@@ -126,7 +128,9 @@
             android:layout_height="45dp"
             android:layout_marginHorizontal="25dp"
             android:layout_marginVertical="10dp"
-            android:background="@drawable/signin_btn" />
+            android:text="SIGN IN"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/red_button" />
 
     </LinearLayout>
 
