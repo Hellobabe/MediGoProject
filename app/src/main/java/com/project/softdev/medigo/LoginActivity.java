@@ -57,12 +57,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             return;
         }
 
-        if (password.length() < 6) {
-            psswrd.setError("Password must be at least 6 characters");
-            psswrd.requestFocus();
-            return;
-            }
-
             progbar.setVisibility(View.VISIBLE);
 
             mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {

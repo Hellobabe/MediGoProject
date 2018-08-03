@@ -121,8 +121,7 @@
             android:id="@+id/progbar"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:visibility="gone"
-            android:progressTint="#000000"/>
+            android:visibility="gone" />
     </LinearLayout>
 
 

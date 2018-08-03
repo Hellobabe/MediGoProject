@@ -5,7 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
+import android.widget.ProgressBar;
+
 
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -13,8 +14,8 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
 
     private FirebaseAuth mAuth;
 
-    Button btncam, btnpic, btnnonprescript, btnprofile;
-    ImageView ic_logout;
+    Button btncam, btnpic, nonprescription, btnprofile;
+    ProgressBar progressBar2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,11 +24,13 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
 
         mAuth = FirebaseAuth.getInstance();
 
-        findViewById(R.id.ic_logout).setOnClickListener(this);
         findViewById(R.id.btncam).setOnClickListener(this);
         findViewById(R.id.btnpic).setOnClickListener(this);
-        findViewById(R.id.btnnonprescript).setOnClickListener(this);
+        findViewById(R.id.nonprescription).setOnClickListener(this);
         findViewById(R.id.btnprofile).setOnClickListener(this);
+
+        progressBar2 = findViewById(R.id.progressBar2);
+
 
     }
 
@@ -35,28 +38,28 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btncam:
-                finish();
                 startActivity(new Intent(this, OCRActivity.class));
+                // ha[[ylife@gmail.comprogressBar2.setVisibility(View.VISIBLE);
                 break;
 
             case R.id.btnpic:
                 startActivity(new Intent());
                 break;
 
-            case R.id.btnnonprescript:
+            case R.id.nonprescription:
                 startActivity(new Intent());
                 break;
 
             case R.id.btnprofile:
-                finish();
                 startActivity(new Intent(this, ProfileActivity.class));
+                //progressBar2.setVisibility(View.VISIBLE);
                 break;
 
-            case R.id.ic_logout:
+            /*case R.id.ic_logout:
                 mAuth.signOut();
                 finish();
                 startActivity(new Intent(this, LoginActivity.class));
-                break;
+                break;*/
 
         }
     }

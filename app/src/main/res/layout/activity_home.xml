@@ -8,20 +8,24 @@
     tools:context=".HomeActivity">
 
     <LinearLayout
-        android:id="@+id/nonprescription"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:id="@+id/layout_non_prescription"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
         android:background="#4F81BC"
         android:gravity="center"
         android:orientation="vertical"
-        app:layout_constraintEnd_toStartOf="@+id/btnprofile"
+        app:layout_constraintBottom_toTopOf="@+id/layout_camera"
+        app:layout_constraintEnd_toStartOf="@+id/layout_profile"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btncam">
+        app:layout_constraintTop_toBottomOf="@+id/home_main_page">
 
         <ImageButton
+            android:id="@+id/nonprescription"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:background="@drawable/medicine_icon" />
@@ -35,20 +39,21 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/btnpic"
-        android:layout_width="150dp"
-        android:layout_height="151dp"
-        android:layout_marginEnd="8dp"
+        android:id="@+id/layout_prescription"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="24dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="20dp"
         android:background="#4F81BC"
         android:gravity="center"
         android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/layout_feedback"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btncam"
-        app:layout_constraintTop_toBottomOf="@+id/home_main_page">
+        app:layout_constraintStart_toEndOf="@+id/layout_camera">
 
         <ImageButton
+            android:id="@+id/btnpic"
             android:layout_width="80dp"
             android:layout_height="100dp"
             android:background="@drawable/image_prescript" />
@@ -62,20 +67,21 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/btncam"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:id="@+id/layout_camera"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginBottom="20dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="24dp"
         android:background="#4F81BC"
         android:gravity="center"
         android:orientation="vertical"
-        app:layout_constraintEnd_toStartOf="@+id/btnpic"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/home_main_page">
+        app:layout_constraintBottom_toTopOf="@+id/layout_feedback"
+        app:layout_constraintEnd_toStartOf="@+id/layout_prescription"
+        app:layout_constraintStart_toStartOf="parent">
 
         <ImageButton
+            android:id="@+id/btncam"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:background="@drawable/ic_camera" />
@@ -89,20 +95,23 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/btnprofile"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginEnd="8dp"
+        android:id="@+id/layout_profile"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="24dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="32dp"
         android:background="#4F81BC"
         android:gravity="center"
         android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/layout_prescription"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/nonprescription"
-        app:layout_constraintTop_toBottomOf="@+id/btnpic">
+        app:layout_constraintStart_toEndOf="@+id/layout_non_prescription"
+        app:layout_constraintTop_toBottomOf="@+id/home_main_page">
 
         <ImageButton
+            android:id="@+id/btnprofile"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:background="@drawable/ic_profile" />
@@ -116,23 +125,21 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/btnfeedback"
-        android:layout_width="335dp"
-        android:layout_height="140dp"
-        android:layout_marginBottom="10dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="20dp"
+        android:id="@+id/layout_feedback"
+        android:layout_width="350dp"
+        android:layout_height="160dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
         android:background="#4F81BC"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nonprescription">
+        app:layout_constraintStart_toStartOf="parent">
 
         <ImageButton
+            android:id="@+id/btnfeedback"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:background="@drawable/ic_feedback" />
@@ -160,5 +167,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-5dp"
+        android:layout_marginEnd="-2dp"
+        android:layout_marginStart="-2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="gone"/>
 
 </android.support.constraint.ConstraintLayout>

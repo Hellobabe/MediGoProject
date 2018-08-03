@@ -11,7 +11,7 @@
         android:label="Medigo"
         android:roundIcon="@drawable/medigologo"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity android:name=".LoginActivity"
             android:screenOrientation="portrait">
             <intent-filter>
